@@ -443,9 +443,9 @@ header nav ul li a:focus-visible {
     gap: 72px; /* a bit more separation between text and image */
     padding-right: 60px; /* more breathing room near right edge */
   }
-  .hero-image { 
+  .hero-image {
     margin-right: 72px; /* extra right-side spacing as requested */
-    max-width: 600px; /* larger image for desktop */
+    max-width: 480px; /* adjusted smaller image for desktop */
   }
 }
 
@@ -456,6 +456,7 @@ header nav ul li a:focus-visible {
   }
   .hero-image {
     margin-right: 90px;
+    max-width: 500px; /* adjusted smaller image for ultra-wide */
   }
 }
 
@@ -759,7 +760,7 @@ header nav ul li a.active::after { width: 100%; }
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
     margin: 30px 0;
 }
 
