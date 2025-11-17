@@ -624,11 +624,6 @@ header nav ul li a.active::after { width: 100%; }
     margin-bottom: 30px;
 }
 
-.experience-list {
-  list-style: none;
-  padding: 0;
-}
-
 .experience-item {
     background-color: var(--project-background);
     border-radius: 12px;
@@ -688,15 +683,13 @@ header nav ul li a.active::after { width: 100%; }
     margin-bottom: 30px;
 }
 
-.achievement-list {
-  list-style: none;
-  padding: 0;
-}
-
 .achievement-item {
     background-color: var(--project-background);
     border-radius: 12px;
     padding: 24px;
+    margin: 0 auto 20px;
+    max-width: 650px;
+    width: 100%;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
