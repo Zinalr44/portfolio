@@ -922,86 +922,102 @@ footer p {
       align-items: flex-start;
       padding: 20px;
     }
-  
+
     header nav ul {
       flex-direction: column;
       align-items: flex-start;
       gap: 12px;
       margin-top: 10px;
     }
-  
+
     .toggle-wrapper {
       margin: 10px 0 0;
     }
-  
+
+    .hero {
+      padding: 60px 20px;
+      gap: 30px;
+    }
+
+    .hero h1 {
+      font-size: 32px;
+    }
+
     .hero h2 {
       font-size: 26px;
     }
-  
+
     .hero p,
     .section p,
     .contact p {
       font-size: 16px;
     }
-  
+
+    .hero .button {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      text-align: center;
+    }
+
     .button {
       padding: 10px 20px;
       font-size: 15px;
     }
-  
+
     .section,
     .experience,
     .achievements,
     .contact {
       padding: 40px 16px;
     }
-  
+
     .experience-item,
     .achievement-item {
       padding: 18px;
     }
-  
+
     .skills-cloud {
       gap: 14px;
     }
-  
+
     .project-details h3 {
       font-size: 18px;
     }
-  
+
     .project-details p {
       font-size: 15px;
     }
-  
+
     .experience-item p,
     .achievement-item p {
       font-size: 15px;
     }
-  
+
     .role,
     .title {
       font-size: 16px;
     }
-  
+
     .duration,
     .date {
       font-size: 14px;
     }
-  
+
     .contact-info {
       gap: 20px;
     }
-    
+
     .fa-stack {
         width: 2em;
         height: 2em;
         line-height: 2em;
     }
-    
+
     .fa-stack-2x {
         font-size: 1.3em;
     }
-    
+
     .fa-stack-1x {
         font-size: 0.8em;
     }
@@ -1012,83 +1028,90 @@ footer p {
     .logo {
       font-size: 26px;
     }
-  
+
     .hero {
-      padding: 50px 15px;
-      gap: 30px;
+      padding: 40px 15px;
+      gap: 20px;
     }
-  
+
+    .hero h1 {
+      font-size: 28px;
+    }
+
     .hero h2 {
       font-size: 22px;
     }
-  
+
     .hero p {
       font-size: 15px;
     }
-  
+
     .hero .button {
-      padding: 10px 18px;
+      display: block;
+      width: 100%;
+      padding: 12px 18px;
       font-size: 14px;
-      margin: 8px 8px 0 0;
+      margin: 8px 0;
+      text-align: center;
     }
-  
+
     .section h2,
     .experience h2,
     .achievements h2,
     .contact h2 {
       font-size: 22px;
     }
-  
+
     .section p,
     .contact p {
       font-size: 15px;
     }
-  
+
     .skills-cloud span {
       padding: 8px 16px;
       font-size: 13px;
     }
-  
+
     .project-gallery {
       grid-template-columns: 1fr;
     }
-  
+
     .project-details h3 {
       font-size: 16px;
     }
-  
+
     .project-details p {
       font-size: 14px;
     }
-  
+
     .experience-item,
     .achievement-item {
       padding: 14px;
     }
-  
+
     .role,
     .title {
       font-size: 15px;
     }
-  
+
     .duration,
     .date {
       font-size: 13px;
     }
-  
+
     .contact {
       padding: 60px 15px;
     }
-  
+
     .contact h2 {
       font-size: 24px;
     }
-  
+
     .contact p {
       font-size: 15px;
       margin-bottom: 30px;
     }
-  
+
     .contact-info {
       gap: 15px;
       overflow-x: auto;
@@ -1097,27 +1120,27 @@ footer p {
       margin: 20px -10px 30px;
       padding: 0 10px 20px;
     }
-    
+
     .fa-stack {
         width: 2em;
         height: 2em;
         line-height: 2em;
         min-width: 2em; /* Prevent icons from shrinking */
     }
-    
+
     .fa-stack-2x {
         font-size: 1.2em;
     }
-    
+
     .fa-stack-1x {
         font-size: 0.7em;
     }
-  
+
     footer {
       font-size: 14px;
       padding: 16px 10px;
     }
-  
+
     #scrollTopBtn {
       padding: 10px 14px;
       font-size: 16px;
