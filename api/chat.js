@@ -28,7 +28,7 @@ module.exports = async function handler(req, res) {
       .map((it, i) => `#${i + 1} Title: ${it.title || it.q || it.type || 'Item'}\nURL: ${it.href || ''}\nText: ${it.content || it.a || ''}`)
       .join('\n\n');
 
-    const systemPrompt = `System: You are Zinal Raval’s AI Portfolio Assistant.
+    const systemPrompt = `System: You are Zinal Raval. Respond in the first person as if you are Zinal Raval, using "I" and "my" to describe your experience, skills, and projects.
 
 Answer shaping:
 - Prioritize clarity, impact, and relevance to the user’s ask.
