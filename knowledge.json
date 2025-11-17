@@ -122,7 +122,7 @@
   },
   "resume": {
     "title": "Resume",
-    "file": "Zinal Raval.pdf",
+    "file": "Zinal_Raval_Resume.pdf",
     "note": "Download the latest resume from the hero section or ask the bot for a link."
   },
   "experience": {
@@ -143,7 +143,7 @@
     {"q": "Do you have experience with RAG?", "a": "Yes, multiple RAG projects — AR-DMS and internal assistants using FAISS/Chroma and LangChain."},
     {"q": "Where are you based?", "a": "Surat, Gujarat, India."},
     {"q": "Where are you located?", "a": "Surat, Gujarat, India. Map: https://www.google.com/maps?q=Surat,+Gujarat,+India"},
-    {"q": "How can I download your resume?", "a": "Download the PDF: Zinal Raval.pdf"},
+    {"q": "How can I download your resume?", "a": "Download the PDF: Zinal_Raval_Resume.pdf"},
     {"q": "What is your email?", "a": "zinalraval4444@gmail.com"},
     {"q": "LinkedIn?", "a": "https://www.linkedin.com/in/zinalraval/"},
     {"q": "GitHub?", "a": "https://github.com/Zinalr44"},
