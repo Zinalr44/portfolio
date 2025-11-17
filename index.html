@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zinal Raval Portfolio</title>
+    <meta name="description" content="Zinal Raval – AI, Robotics, and Machine Learning Portfolio. Explore projects in LLMs, NLP, RAG, and automation.">
+    <meta property="og:title" content="Zinal Raval | AI & Robotics Engineer">
+    <meta property="og:image" content="WhatsApp Image 2025-04-10 at 14.59.37_ba8a2b79.jpg">
+    <meta property="og:description" content="Projects, experience, and innovations in AI, ML, LLMs, and robotics.">    
+    <meta name="color-scheme" content="dark light">
+    <meta name="theme-color" content="#0f0f0f">
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; 
+    script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://www.googletagmanager.com https://www.google-analytics.com https://www.google.com; 
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU='; 
+    font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com data:; 
+    img-src 'self' data: https: blob:; 
+    connect-src 'self' https://api.openai.com https://api.openrouter.ai https://huggingface.co wss: https://www.google-analytics.com https://analytics.google.com; 
+    media-src 'self' blob:; 
+    frame-src 'none';">
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <!-- Preload critical resources -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@500;600;700&display=swap" as="style">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="Desktop/portfolio/style.css">
+    <link rel="stylesheet" href="chatbot.css">
+    <!-- Font Awesome 6.4.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+    <!-- Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js')
+            .then(reg => console.log('SW registered'))
+            .catch(err => console.log('SW registration failed'));
+        });
+      }
+    </script>
+    <!-- TODO: Replace with your live domain -->
+    <link rel="canonical" href="https://your-domain.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-domain.com/">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Zinal Raval",
+      "url": "https://your-domain.com/",
+      "image": "WhatsApp Image 2025-04-10 at 14.59.37_ba8a2b79.jpg",
+      "jobTitle": "AI & Robotics Engineer",
+      "description": "AI, Robotics, and Machine Learning specialist with expertise in LLMs, NLP, RAG, and automation.",
+      "knowsAbout": ["AI", "Machine Learning", "LLMs", "RAG", "Computer Vision", "Robotics", "FastAPI", "LangChain", "OpenCV"],
+      "sameAs": [
+        "https://github.com/Zinalr44",
+        "https://www.linkedin.com/in/zinalraval/",
+        "https://www.kaggle.com/zinalraval"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Surat",
+        "addressRegion": "Gujarat",
+        "addressCountry": "IN"
+      },
+      "email": "zinalraval4444@gmail.com"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Zinal Raval Portfolio",
+      "url": "https://your-domain.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://your-domain.com/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Featured Projects",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Moneyverse AI Trading Platform",
+            "description": "Real-time trading system with AI assistant",
+            "url": "https://github.com/zinalraval/Moneyverse_ai_app"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "AR-DMS AI Research System",
+            "description": "AI assistant for PDF and web content analysis",
+            "url": "https://github.com/Zinalr44/AI-Research-DMS"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Material Estimation from Architectural PDFs",
+            "description": "AI pipeline for blueprint analysis",
+            "url": "https://github.com/Zinalr44/AI-Powered-Material-Estimation-from-Architectural-PDFs"
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+  <a href="#about" class="skip-link">Skip to content</a>
+  <div id="loader" class="loader-container">
+    <div class="loader"></div>
+</div>
+    <header role="banner">
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+        <div class="logo" role="img" aria-label="Zinal Raval logo">Zinal Raval</div>
+        <nav role="navigation" aria-label="Main navigation">
+            <ul id="primary-nav" role="list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="toggle-wrapper">
+                  <input type="checkbox" id="mode-toggle" role="switch" aria-label="Toggle between light and dark theme" aria-checked="false" />
+                  <label for="mode-toggle" class="label-mode" title="Toggle light/dark mode">
+                    <span class="toggle-icon sun" aria-hidden="true">☀️</span>
+                    <span class="toggle-icon moon" aria-hidden="true">🌙</span>
+                    <span class="slider" aria-hidden="true"></span>
+                  </label>
+                </li>                                            
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+    <section class="hero" id="about" aria-labelledby="hero-heading">
+        <div class="content">
+            <h1 id="hero-heading">Hi, I'm <span class="highlight">Zinal Raval</span></h1>
+            <p>What started with curiosity became a journey into intelligent machines and real-world AI. I build things that can understand, predict, and act — from language models to sensor-driven robots. My goal? Make smart tech useful.</p>
+            <p><em>“Code that learns. Bots that help. Projects that matter.”</em></p>
+            <a href="#projects" class="button">See My Work</a>
+
+            <a href="Zinal Raval.pdf" class="button" download aria-label="Download Zinal Raval's resume as PDF">Download Resume</a>
+        </div>
+        <img src="WhatsApp Image 2025-04-10 at 14.59.37_ba8a2b79.jpg" alt="Professional portrait of Zinal Raval, AI & Robotics Engineer, smiling outdoors in traditional Indian attire against a green background" class="hero-image" loading="eager" width="550" height="550">
+    </section>
+    </main>
+
+    <section class="section skills" id="skills" aria-labelledby="skills-heading">
+        <div class="container">
+            <h2 id="skills-heading">Skills</h2>
+            <div class="skills-cloud" role="list" aria-label="Technical skills cloud">
+                <!-- Programming -->
+                <span role="listitem">Python</span>
+                <span role="listitem">SQL</span>
+
+                <!-- ML / DL Core -->
+                <span role="listitem">TensorFlow</span>
+                <span role="listitem">Scikit-learn</span>
+                <span role="listitem">CNNs</span>
+                <span role="listitem">XGBoost</span>
+                <span role="listitem">Transfer Learning</span>
+
+                <!-- GenAI / LLMs -->
+                <span role="listitem">GPT</span>
+                <span role="listitem">LLaMA</span>
+                <span role="listitem">LangChain</span>
+                <span role="listitem">RAG</span>
+                <span role="listitem">SBERT</span>
+                <span role="listitem">FAISS</span>
+                <span role="listitem">ChromaDB</span>
+                <span role="listitem">Prompt Engineering</span>
+
+                <!-- NLP -->
+                <span role="listitem">Semantic Search</span>
+                <span role="listitem">NER</span>
+                <span role="listitem">Summarization</span>
+                <span role="listitem">Whisper</span>
+
+                <!-- Computer Vision -->
+                <span role="listitem">OpenCV</span>
+                <span role="listitem">Tesseract OCR</span>
+                <span role="listitem">Image Segmentation</span>
+
+                <!-- Backend / Deployment -->
+                <span role="listitem">FastAPI</span>
+                <span role="listitem">REST APIs</span>
+                <span role="listitem">JWT</span>
+                <span role="listitem">Docker</span>
+                <span role="listitem">GitHub Actions</span>
+
+                <!-- Databases -->
+                <span role="listitem">PostgreSQL</span>
+                <span role="listitem">MongoDB</span>
+                <span role="listitem">SQLite</span>
+
+                <!-- Cloud -->
+                <span role="listitem">AWS</span>
+                <span role="listitem">Vercel</span>
+
+                <!-- Data -->
+                <span role="listitem">Pandas</span>
+                <span role="listitem">NumPy</span>
+                <span role="listitem">Matplotlib</span>
+
+                <!-- Automation -->
+                <span role="listitem">Selenium</span>
+                <span role="listitem">n8n</span>
+
+                <!-- Tools -->
+                <span role="listitem">Jupyter</span>
+                <span role="listitem">PyMuPDF</span>
+                <span role="listitem">pdfplumber</span>
+              </div>              
+        </div>
+    </section>
+
+    <section class="section projects" id="projects" aria-labelledby="projects-heading">
+        <div class="container">
+            <h2 id="projects-heading">Projects</h2>
+            <p class="section-description">
+                A curated collection of AI, LLM, NLP, and Robotics projects — blending code with creativity to solve real-world problems through automation, intelligence, and smart systems.
+            </p>              
+            <div class="project-gallery" role="list" aria-label="Featured projects gallery">      <!-- Moneyverse -->
+              <div class="project-item" role="listitem">
+                <a href="https://github.com/zinalraval/Moneyverse_ai_app" target="_blank" rel="noopener noreferrer" aria-label="View Moneyverse AI Trading Platform on GitHub">
+                  <div class="project-details">
+                    <h3>AI-Powered Real-Time Trading & Analytics Platform (Moneyverse)</h3>
+                    <p>Developed a FastAPI + Streamlit-based real-time trading system, WebSocket-powered live market updates, and an interactive dashboard. Includes an in-app AI trading assistant chatbot for Q&A, insights, and guidance. Integrated market/news APIs, PostgreSQL for data persistence, and Docker for scalable deployment.</p>
+                    <p><strong>Tech:</strong> FastAPI, Streamlit, WebSockets, LLM Chatbot, PostgreSQL, Docker</p>
+                  </div>
+                </a>
+              </div>
+              <!-- AR-DMS -->
+              <div class="project-item" role="listitem">
+                <a href="https://github.com/Zinalr44/AI-Research-DMS" target="_blank" rel="noopener noreferrer" aria-label="View AR-DMS AI Research System on GitHub">
+                  <div class="project-details">
+                    <h3>AI Research & Decision System (AR-DMS)</h3>
+                    <p>Full-stack AI assistant capable of parsing PDFs, web pages, and images using OCR, NLP, and semantic search. Supports RAG-based querying, summarization, and intelligent decision support.</p>
+                    <p><strong>Tech:</strong> FastAPI, LangChain, Hugging Face, FAISS, PyMuPDF, Tesseract</p>
+                  </div>
+                </a>
+              </div>
+        
+              <!-- Material Estimator -->
+              <div class="project-item">
+                <a href="https://github.com/Zinalr44/AI-Powered-Material-Estimation-from-Architectural-PDFs" target="_blank" rel="noopener noreferrer">
+                  <div class="project-details">
+                    <h3>Material Estimation from Architectural PDFs</h3>
+                    <p>Production-grade AI pipeline to analyze architectural blueprints and extract structured, room-wise material takeoff. Outputs CSV reports with counts and area-based estimations using LLM reasoning.</p>
+                    <p><strong>Tech:</strong> Groq, LLaMA 3, PyMuPDF, pdfplumber, OCR</p>
+                  </div>
+                </a>
+              </div>
+        
+              <!-- HistoriAI -->
+              <div class="project-item">
+                <a href="https://github.com/ShivenPatel19/HistoriAI---AI-Chatbot-Guide-for-India-s-Heritage" target="_blank" rel="noopener noreferrer">
+                  <div class="project-details">
+                    <h3>HistoriAI – Multilingual Travel Assistant</h3>
+                    <p>Voice-interactive travel bot offering historical insights in English, Hindi, and Gujarati. Powered by LLaMA 3 and LangGraph with a local RAG system and text-to-speech output.</p>
+                    <p><strong>Tech:</strong> LLaMA 3, LangGraph, ChromaDB, MMS, TTS</p>
+                  </div>
+                </a>
+              </div>
+        
+              <!-- LinkedIn Scraper -->
+              <div class="project-item">
+                <a href="https://github.com/Zinalr44/Automated-LinkedIn-Profile-Scraper-Business-Insights" target="_blank" rel="noopener noreferrer">
+                  <div class="project-details">
+                    <h3>Automated LinkedIn Profile Scraper & Business Insights</h3>
+                    <p>Web scraping system that extracts professional data by filters and classifies businesses using AI. Includes scheduling, proxies, and JSON exports for large-scale insights.</p>
+                    <p><strong>Tech:</strong> Selenium, SerpAPI, Python, JSON, Web Automation</p>
+                  </div>
+                </a>
+              </div>
+        
+              <!-- GPT4 Rewriter -->
+              <div class="project-item">
+                <a href="https://github.com/Zinalr44/AI-Powered-Text-Rewriting-System-Using-GPT-4" target="_blank" rel="noopener noreferrer">
+                  <div class="project-details">
+                    <h3>AI-Powered Text Rewriting System (GPT-4 + SBERT)</h3>
+                    <p>Advanced few-shot GPT-4-based rewriting tool with SBERT for style and meaning validation. Designed for content rephrasing with tone-preserving logic and prompt engineering.</p>
+                    <p><strong>Tech:</strong> GPT-4 (OpenRouter), SentenceTransformers, Few-shot Learning, SBERT</p>
+                  </div>
+                </a>
+              </div>
+        
+              <!-- Robotic Nurse -->
+              <div class="project-item">
+                <a href="https://github.com/Zinalr44/Robotic-Nurse" target="_blank" rel="noopener noreferrer">
+                  <div class="project-details">
+                    <h3>Robotic Nurse (SSIP Funded – Ongoing)</h3>
+                    <p>Smart nursing assistant robot for healthcare automation. Capable of delivering medicine and monitoring vitals using embedded electronics and BLE communication.</p>
+                    <p><strong>Tech:</strong> Arduino, IR Sensors, BLE, Embedded C</p>
+                  </div>
+                </a>
+              </div>
+        
+              <!-- Robotic Arm -->
+              <div class="project-item">
+                <a href="https://github.com/Zinalr44/Robotic-Arm" target="_blank" rel="noopener noreferrer">
+                  <div class="project-details">
+                    <h3>Robotic Arm (SSIP Funded)</h3>
+                    <p>Programmable robotic arm designed for precision pick-and-place using Arduino and servo motors. Supports real-time control with industrial use case scenarios.</p>
+                    <p><strong>Tech:</strong> Arduino, Servo Motors, Sensors, Embedded Programming</p>
+                  </div>
+                </a>
+              </div>
+        
+              <!-- Video Downloader -->
+              <div class="project-item">
+                <a href="https://github.com/Zinalr44/Python-Based-Video-Downloader-API" target="_blank" rel="noopener noreferrer">
+                  <div class="project-details">
+                    <h3>Python-Based Video Downloader API</h3>
+                    <p>Built a FastAPI wrapper around a video downloading tool that extracts videos from various sources by URL. Supports multi-resolution, concurrent downloads, and metadata handling.</p>
+                    <p><strong>Tech:</strong> Python, FastAPI, yt-dlp, Pydantic</p>
+                  </div>
+                </a>
+              </div>
+        
+              <!-- Real-time Face Swapping -->
+              <div class="project-item">
+                <a href="https://github.com/Zinalr44/Real-time-Face-Swapping-using-Dlib-DeepFaceLive" target="_blank" rel="noopener noreferrer">
+                  <div class="project-details">
+                    <h3>Real-time Face Swapping using Dlib & DeepFaceLive</h3>
+                    <p>Live face-swapping engine using facial landmarks, deep feature embeddings, and video stream alignment. Combines Dlib and DeepFaceLive for high-precision identity replacement.</p>
+                    <p><strong>Tech:</strong> Dlib, OpenCV, DeepFaceLive, NumPy</p>
+                  </div>
+                </a>
+              </div>
+        
+                  <div class="project-item">
+                    <a href="https://github.com/Zinalr44/Food-Classification-and-Calorie-Estimation-using-ResNet50" target="_blank" rel="noopener noreferrer">
+                      <div class="project-details">
+                        <h3>Food Classification & Calorie Estimation</h3>
+                        <p>Built a ResNet50-based model to classify food images and estimate caloric values, aiding dietary monitoring through visual AI recognition.</p>
+                        <p><strong>Tech:</strong> ResNet50, Keras, TensorFlow, ImageNet, NumPy</p>
+                      </div>
+                    </a>
+                  </div>
+                
+                  <div class="project-item">
+                    <a href="https://github.com/Zinalr44/Healthcare-Billing-Data-Analysis-and-Reporting" target="_blank" rel="noopener noreferrer">
+                      <div class="project-details">
+                        <h3>Healthcare Billing Data Audit</h3>
+                        <p>Automated complex healthcare billing audits using Python. Enabled anomaly detection, analytics, and report generation for billing optimization.</p>
+                        <p><strong>Tech:</strong> Pandas, NumPy, Matplotlib, Regex, Python Automation</p>
+                      </div>
+                    </a>
+                  </div>
+                
+                  <div class="project-item">
+                    <a href="https://github.com/Zinalr44/Cat-and-Dog-Image-Classification-using-CNN" target="_blank" rel="noopener noreferrer">
+                      <div class="project-details">
+                        <h3>Cat vs Dog Image Classifier</h3>
+                        <p>Developed a CNN model to distinguish between cat and dog images with high accuracy. Focused on training, validation, and overfitting prevention.</p>
+                        <p><strong>Tech:</strong> TensorFlow, Keras, CNN, Image Augmentation</p>
+                      </div>
+                    </a>
+                  </div>
+                
+                  <div class="project-item">
+                    <a href="https://github.com/Zinalr44/Movie-Recommendation-System-using-TF-IDF-and-SVD" target="_blank" rel="noopener noreferrer">
+                      <div class="project-details">
+                        <h3>Movie Recommendation System</h3>
+                        <p>Designed a hybrid recommendation engine combining TF-IDF and SVD-based collaborative filtering for personalized content suggestions.</p>
+                        <p><strong>Tech:</strong> Scikit-learn, Pandas, TF-IDF, SVD, Cosine Similarity</p>
+                      </div>
+                    </a>
+                  </div>
+                
+                  <div class="project-item">
+                    <a href="https://github.com/Zinalr44/Customer-Segmentation-using-K-Means-Clustering" target="_blank" rel="noopener noreferrer">
+                      <div class="project-details">
+                        <h3>Customer Segmentation Analysis</h3>
+                        <p>Used clustering algorithms to identify high-value customer segments based on purchasing behavior, driving 15% business growth via targeted marketing.</p>
+                        <p><strong>Tech:</strong> K-Means, PCA, Seaborn, Scikit-learn, Python</p>
+                      </div>
+                    </a>
+                  </div>
+                
+                  <div class="project-item">
+                    <a href="https://github.com/Zinalr44/Spam-Message-Classification" target="_blank" rel="noopener noreferrer">
+                      <div class="project-details">
+                        <h3>Spam Message Classification</h3>
+                        <p>Implemented a NLP-based spam detection model using TF-IDF feature extraction and classifiers, achieving high precision and recall.</p>
+                        <p><strong>Tech:</strong> NLP, TF-IDF, Logistic Regression, Scikit-learn</p>
+                      </div>
+                    </a>
+                  </div>
+                
+          <p class="projects-cta">Like what you see? <a href="#contact">Let’s build something great together →</a></p>
+        </div>
+      </div>
+</section>                                                                                 
+                  
+    <section class="section achievements" id="achievements" aria-labelledby="achievements-heading">
+        <div class="container">
+            <h2 id="achievements-heading">Achievements</h2>
+            <p class="section-description">
+              Recognized for innovation and impact through national-level competitions, funding awards, and competitive selections.
+            </p>
+        
+            <ul class="achievement-list" role="list" aria-label="Achievements list">
+            <li class="achievement-item">
+              <p><strong>Winner – Reckon 4.0 National Hackathon</strong></p>
+              <p>Secured 1st place for developing a real-time AI solution addressing practical problems with tangible societal impact.</p>
+            </li>
+        
+            <li class="achievement-item">
+              <p><strong>SSIP India – Funding Recipient</strong></p>
+              <p>Received government-backed innovation funding for two robotics projects: Robotic Nurse and Robotic Arm.</p>
+            </li>
+        
+            <li class="achievement-item">
+              <p><strong>Regional Finalist – SSIP Hackathon 2022</strong></p>
+              <p>Recognized for an innovative AI solution during regional hackathon rounds held across Gujarat.</p>
+            </li>
+            </ul>
+            
+        </div>
+    </section>
+    
+
+    <section class="section experience" id="experience" aria-labelledby="experience-heading">
+        <div class="container">
+            <h2 id="experience-heading">Experience</h2>
+            <p class="section-description">
+                A journey through hands-on experience in AI, data science, and robotics — from internships to real-world deployments and funded research projects.
+            </p>
+            <ul class="experience-list" role="list" aria-label="Professional experience timeline">
+            <li class="experience-item">
+                <p><strong>AI/ML Developer – Prodev Infotech</strong> (Jan 2025 – Present)</p>
+                <p>Building and deploying real-time ML pipelines using FastAPI, Hugging Face, and custom LLM integrations.</p>
+            </li>
+            <li class="experience-item">
+                <p><strong>MooRopan INDIA PVT. LTD.</strong> (Oct 2022 - May 2023)</p>
+                <p>As a core member, developed engaging content, managed campaigns, and analyzed metrics to enhance brand presence and customer engagement on social media.</p>
+            </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2>Let's Connect!</h2>
+            <p>Whether you’re interested in collaborating, hiring, or just chatting about AI and robotics, I’d love to hear from you.</p>
+            <div class="contact-info">
+                <a href="mailto:zinalraval4444@gmail.com" class="social-icon" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/zinalraval/" target="_blank" class="social-icon" aria-label="LinkedIn" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Zinalr44" target="_blank" class="social-icon" aria-label="GitHub" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.upwork.com/freelancers/~0150462ef1885ee898" target="_blank" class="social-icon" aria-label="Upwork Profile" rel="noopener noreferrer" title="Upwork Freelance Profile">
+                    <i class="fas fa-laptop-code" style="color: var(--primary-accent);"></i>
+                </a>
+                <a href="https://www.kaggle.com/zinalraval" target="_blank" class="social-icon" aria-label="Kaggle" rel="noopener noreferrer">
+                    <i class="fab fa-kaggle"></i>
+                </a>
+                <a href="https://wa.me/+918488084444" target="_blank" class="social-icon" aria-label="WhatsApp" rel="noopener noreferrer">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://www.google.com/maps?q=Surat,+Gujarat,+India" target="_blank" class="social-icon" aria-label="Location" rel="noopener noreferrer">
+                    <i class="fas fa-map-marker-alt"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; <span id="year">2025</span> Zinal Raval. All rights reserved.</p>
+        </div>
+    </footer>
+ 
+    <button id="scrollTopBtn" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">⬆</button>
+
+    <!-- Chatbot trigger button -->
+    <button id="chatbot-btn" aria-label="Open chat assistant" title="Chat with me">💬</button>
+
+    <!-- Chatbot Modal -->
+    <div id="chatbot" class="chatbot" role="dialog" aria-modal="true" aria-labelledby="chatbot-title" aria-describedby="chatbot-desc" hidden>
+      <div class="chatbot-window">
+        <header class="chatbot-header">
+          <h3 id="chatbot-title">Portfolio Assistant</h3>
+          <p id="chatbot-desc" class="sr-only">Interactive assistant for inquiring about projects, skills, and resume. Use the input field below to ask questions.</p>
+          <button class="chatbot-close" aria-label="Close chatbot dialog" title="Close">✕</button>
+        </header>
+        <div class="chatbot-messages" id="chatbot-messages" aria-live="polite" aria-atomic="true"></div>
+        <div class="chatbot-suggestions" id="chatbot-suggestions" aria-label="Suggested prompts" role="listbox"></div>
+        <form class="chatbot-input" id="chatbot-form" aria-describedby="chatbot-desc">
+          <textarea id="chatbot-query" name="q" rows="1" placeholder="Ask about my projects, skills, resume… (Enter to send, Shift+Enter for newline)" autocomplete="off" aria-label="Enter your message" required></textarea>
+          <button type="button" id="voice-btn" class="voice-btn" aria-label="Voice input" title="Speak your query">🎤</button>
+          <button type="submit" class="send" aria-label="Send message">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Fuse.js for client search -->
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+    <!-- DOMPurify for safe HTML sanitation -->
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
+    <!-- Portfolio chatbot logic -->
+    <script defer src="chatbot.js"></script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+[
+  {
+    "name": "About",
+    "prompt": "Tell me about Zinal",
+    "patterns": [
+      "^(who\\s+are\\s+you|tell\\s+me\\s+about\\s+zinal|about\\s+zinal|about\\s+you)$",
+      "\\babout\\b",
+      "\\bintro(duction)?\\b"
+    ],
+    "answer": "Zinal Raval is an AI & Robotics engineer focused on practical, production-ready AI — LLMs, NLP, RAG, computer vision, and automation — with projects that ship and make impact.",
+    "href": "#about",
+    "tags": ["about", "intro", "profile"]
+  },
+  {
+    "name": "Skills",
+    "prompt": "What are your core skills?",
+    "patterns": [
+      "\\b(skill|skills|tech\\s*stack|technologies|tools)\\b"
+    ],
+    "answer": "Core strengths across AI/ML (TensorFlow, Scikit-learn, LLaMA, RAG) and Backend (FastAPI, REST, Docker) with data tooling (PostgreSQL, Pandas, NumPy).",
+    "href": "#skills",
+    "tags": ["skills", "stack", "tools"]
+  },
+  {
+    "name": "Resume",
+    "prompt": "Share your resume",
+    "patterns": [
+      "\\b(resume|cv|pdf)\\b"
+    ],
+    "answer": "You can download her resume as a PDF.",
+    "href": "Zinal Raval.pdf",
+    "tags": ["resume", "cv", "download"]
+  },
+  {
+    "name": "Contact",
+    "prompt": "How can I contact you?",
+    "patterns": [
+      "\\b(contact|email|linkedin|github|kaggle|whatsapp)\\b"
+    ],
+    "answer": "Reach out via email or LinkedIn. GitHub and Kaggle links are also available.",
+    "href": "#contact",
+    "tags": ["contact", "email", "linkedin", "github", "kaggle", "whatsapp"]
+  },
+  {
+    "name": "Moneyverse",
+    "prompt": "Tell me about Moneyverse",
+    "patterns": [
+      "\\b(moneyverse|trading\\s+platform|real\\-time\\s+trading)\\b"
+    ],
+    "answer": "Moneyverse is a FastAPI + Streamlit real-time trading and analytics platform with an in-app AI assistant, WebSockets, market/news APIs, PostgreSQL, and Docker.",
+    "href": "https://github.com/zinalraval/Moneyverse_ai_app",
+    "tags": ["project", "moneyverse", "trading", "fastapi", "streamlit", "websockets"]
+  },
+  {
+    "name": "AR-DMS",
+    "prompt": "Tell me about AR-DMS",
+    "patterns": [
+      "\\b(ar[-\\s]?dms|ai\\s+research\\s+and\\s+decision|research\\s+\\&\\s+decision)\\b"
+    ],
+    "answer": "AR-DMS is a full-stack AI assistant for parsing PDFs, web pages, and images (OCR) with RAG-based querying, summarization, and decision support.",
+    "href": "https://github.com/Zinalr44/AI-Research-DMS",
+    "tags": ["project", "ar-dms", "rag", "faiss", "ocr", "langchain"]
+  },
+  {
+    "name": "Experience",
+    "prompt": "What is your experience?",
+    "patterns": [
+      "\\b(experience|work\\s+history|work\\s+experience|employment)\\b"
+    ],
+    "answer": "Recent roles include AI/ML Developer at Prodev Infotech (real-time ML pipelines with FastAPI, HF, and custom LLMs) and MooRopan INDIA PVT. LTD. (content, campaigns, analytics).",
+    "href": "#experience",
+    "tags": ["experience", "work", "fastapi", "llm", "huggingface"]
+  },
+  {
+    "name": "Achievements",
+    "prompt": "What are your achievements?",
+    "patterns": [
+      "\\b(achievement|achievements|awards|recognition|winner|finalist)\\b"
+    ],
+    "answer": "Winner – Reckon 4.0 National Hackathon; SSIP India Funding for Robotic Nurse and Robotic Arm; Regional Finalist – SSIP Hackathon 2022.",
+    "href": "#achievements",
+    "tags": ["achievements", "awards", "ssip", "hackathon"]
+  },
+  {
+    "name": "HistoriAI",
+    "prompt": "Tell me about HistoriAI",
+    "patterns": [
+      "\\b(histori(ai)?|multilingual\\s+travel|heritage\\s+bot)\\b"
+    ],
+    "answer": "HistoriAI is a multilingual, voice-interactive travel assistant with local RAG and TTS. Tech: LLaMA 3, LangGraph, ChromaDB, MMS, TTS.",
+    "href": "https://github.com/ShivenPatel19/HistoriAI---AI-Chatbot-Guide-for-India-s-Heritage",
+    "tags": ["project", "historiai", "rag", "tts", "langgraph"]
+  },
+  {
+    "name": "Material Estimator",
+    "prompt": "Tell me about the Material Estimation project",
+    "patterns": [
+      "\\b(material|estimation|architectural\\s*pdf|takeoff)\\b"
+    ],
+    "answer": "AI pipeline that extracts room-wise material takeoff from architectural PDFs and outputs CSV with LLM reasoning. Tech: Groq, LLaMA 3, PyMuPDF, pdfplumber, OCR.",
+    "href": "https://github.com/Zinalr44/AI-Powered-Material-Estimation-from-Architectural-PDFs",
+    "tags": ["project", "ocr", "llm", "groq", "pymupdf", "pdfplumber"]
+  },
+  {
+    "name": "LinkedIn Scraper",
+    "prompt": "Tell me about your LinkedIn scraper",
+    "patterns": [
+      "\\b(linked?in|profile\\s+scraper|business\\s+insights)\\b"
+    ],
+    "answer": "Automated LinkedIn profile scraper and business insights with scheduling, proxies, and JSON export. Tech: Selenium, SerpAPI, Python.",
+    "href": "https://github.com/Zinalr44/Automated-LinkedIn-Profile-Scraper-Business-Insights",
+    "tags": ["project", "selenium", "automation", "serpapi"]
+  },
+  {
+    "name": "Text Rewriting (GPT-4 + SBERT)",
+    "prompt": "Tell me about your text rewriting system",
+    "patterns": [
+      "\\b(rewrite|paraphrase|rephrase|gpt-?4|sbert)\\b"
+    ],
+    "answer": "Few-shot GPT-4 rewriting with SBERT-based style/meaning validation and prompt engineering. Tech: GPT-4 (OpenRouter), SBERT.",
+    "href": "https://github.com/Zinalr44/AI-Powered-Text-Rewriting-System-Using-GPT-4",
+    "tags": ["project", "gpt-4", "sbert", "nlp"]
+  },
+  {
+    "name": "Robotic Nurse",
+    "prompt": "Tell me about the Robotic Nurse",
+    "patterns": [
+      "\\b(robot(ic)?\\s+nurse|nursing\\s+assistant)\\b"
+    ],
+    "answer": "Smart nursing assistant robot for deliveries and vitals via BLE and sensors. Tech: Arduino, IR Sensors, BLE, Embedded C.",
+    "href": "https://github.com/Zinalr44/Robotic-Nurse",
+    "tags": ["project", "robotics", "arduino", "ble"]
+  },
+  {
+    "name": "Robotic Arm",
+    "prompt": "Tell me about the Robotic Arm",
+    "patterns": [
+      "\\b(robot(ic)?\\s+arm|servo|pick\\s*and\\s*place)\\b"
+    ],
+    "answer": "Programmable robotic arm for precision pick-and-place with real-time control. Tech: Arduino, Servo Motors, Sensors, Embedded Programming.",
+    "href": "https://github.com/Zinalr44/Robotic-Arm",
+    "tags": ["project", "robotics", "arduino", "servo"]
+  },
+  {
+    "name": "Video Downloader API",
+    "prompt": "Tell me about the video downloader API",
+    "patterns": [
+      "\\b(video\\s+downloader|yt-dlp|fastapi\\s+api)\\b"
+    ],
+    "answer": "FastAPI wrapper around yt-dlp supporting multi-resolution, concurrency, and metadata. Tech: Python, FastAPI, yt-dlp, Pydantic.",
+    "href": "https://github.com/Zinalr44/Python-Based-Video-Downloader-API",
+    "tags": ["project", "fastapi", "yt-dlp", "api"]
+  },
+  {
+    "name": "Face Swapping",
+    "prompt": "Tell me about the real-time face swapping project",
+    "patterns": [
+      "\\b(face\\s*swap(ping)?|deepfacelive|dlib)\\b"
+    ],
+    "answer": "Real-time face swapping using facial landmarks and deep features. Tech: Dlib, OpenCV, DeepFaceLive, NumPy.",
+    "href": "https://github.com/Zinalr44/Real-time-Face-Swapping-using-Dlib-DeepFaceLive",
+    "tags": ["project", "opencv", "dlib"]
+  },
+  {
+    "name": "Food Classification",
+    "prompt": "Tell me about food classification",
+    "patterns": [
+      "\\b(food\\s+classification|calorie|resnet50)\\b"
+    ],
+    "answer": "Food image classification with calorie estimation. Tech: ResNet50, Keras, TensorFlow, ImageNet, NumPy.",
+    "href": "https://github.com/Zinalr44/Food-Classification-and-Calorie-Estimation-using-ResNet50",
+    "tags": ["project", "resnet50", "keras", "tensorflow"]
+  },
+  {
+    "name": "Healthcare Billing Audit",
+    "prompt": "Tell me about healthcare billing analysis",
+    "patterns": [
+      "\\b(healthcare\\s+billing|audit|reporting)\\b"
+    ],
+    "answer": "Automated billing audit with anomaly detection and reporting. Tech: Pandas, NumPy, Matplotlib, Regex, Python Automation.",
+    "href": "https://github.com/Zinalr44/Healthcare-Billing-Data-Analysis-and-Reporting",
+    "tags": ["project", "pandas", "automation"]
+  },
+  {
+    "name": "Cat vs Dog Classifier",
+    "prompt": "Tell me about the cat vs dog classifier",
+    "patterns": [
+      "\\b(cat|dog)\\b"
+    ],
+    "answer": "CNN model for cat vs dog classification with attention to overfitting and validation. Tech: TensorFlow, Keras, Image Augmentation.",
+    "href": "https://github.com/Zinalr44/Cat-and-Dog-Image-Classification-using-CNN",
+    "tags": ["project", "cnn", "keras", "tensorflow"]
+  },
+  {
+    "name": "Movie Recommendation",
+    "prompt": "Tell me about your movie recommendation system",
+    "patterns": [
+      "\\b(movie\\s+recommend(ation)?|recsys|svd|tf-?idf)\\b"
+    ],
+    "answer": "Hybrid TF-IDF + SVD recommender for personalized suggestions. Tech: Scikit-learn, Pandas, TF-IDF, SVD.",
+    "href": "https://github.com/Zinalr44/Movie-Recommendation-System-using-TF-IDF-and-SVD",
+    "tags": ["project", "recsys", "svd", "tfidf"]
+  },
+  {
+    "name": "Customer Segmentation",
+    "prompt": "Tell me about customer segmentation",
+    "patterns": [
+      "\\b(customer\\s+segment(ation)?|k-?means|clustering)\\b"
+    ],
+    "answer": "K-Means clustering with PCA and visualization to identify high-value segments. Tech: K-Means, PCA, Seaborn, Scikit-learn.",
+    "href": "https://github.com/Zinalr44/Customer-Segmentation-using-K-Means-Clustering",
+    "tags": ["project", "clustering", "k-means", "pca"]
+  },
+  {
+    "name": "Spam Classification",
+    "prompt": "Tell me about spam classification",
+    "patterns": [
+      "\\b(spam|ham|classifier|tf-?idf)\\b"
+    ],
+    "answer": "NLP-based spam detection with TF-IDF features and classic classifiers. Tech: TF-IDF, Logistic Regression, Scikit-learn.",
+    "href": "https://github.com/Zinalr44/Spam-Message-Classification",
+    "tags": ["project", "nlp", "tfidf", "sklearn"]
+  }
+]

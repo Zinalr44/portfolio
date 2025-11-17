@@ -1,0 +1,154 @@
+{
+  "about": {
+    "title": "About",
+    "section": "#about",
+    "content": "What started with curiosity became a journey into intelligent machines and real-world AI. I build things that can understand, predict, and act — from language models to sensor-driven robots. My goal? Make smart tech useful.",
+    "tags": ["about", "intro", "ai", "robotics", "ml", "portfolio"]
+  },
+  "skills": {
+    "title": "Skills",
+    "section": "#skills",
+    "content": "Programming Languages: Python, C/C++, SQL, JavaScript\n\nBackend Development: FastAPI, Node.js (basic); REST APIs (JWT Authentication, OAuth2); GraphQL (API design & optimization)\n\nDatabases: PostgreSQL, MongoDB, SQLite; Redis (caching, async job queues)\n\nArtificial Intelligence / Machine Learning\n- Frameworks: PyTorch, TensorFlow, Keras, Scikit-learn\n- Algorithms: XGBoost, Random Forest, SVM, Clustering\n- Deep Learning: CNNs, RNNs, GANs, Transfer Learning\n- Model Optimization & Serving: ONNX, TorchServe, TensorFlow Serving\n\nNatural Language Processing (NLP)\n- Hugging Face Transformers, GPT, LLaMA, Mistral\n- Sentence Transformers (SBERT), RAG Pipelines (LangChain + FAISS)\n- Vector Databases: Pinecone, Weaviate, Milvus\n- Applications: Summarization, Sentiment Analysis, Question Answering\n\nComputer Vision\n- OpenCV, Tesseract OCR, MediaPipe\n- Object Detection, Image Segmentation, Face Recognition & Swapping\n- Whisper (speech-to-text), AR-DMS project\n\nData Science & Analytics\n- Pandas, NumPy, Matplotlib, Seaborn\n- Jupyter, Colab\n- EDA, Feature Engineering\n- Tools: pdfplumber, PyMuPDF\n\nTesting & Quality Assurance\n- Pytest, unittest\n- Test-Driven Development (TDD)\n- CI/CD integrated testing pipelines\n\nDevOps & MLOps\n- Containers & Orchestration: Docker, Docker Compose, Kubernetes\n- CI/CD: GitHub Actions, Jenkins (basic)\n- Model Lifecycle: MLflow, DVC\n- Monitoring & Logging: Prometheus, Grafana, ELK Stack\n- Architecture: Microservices, Serverless\n\nCloud & Deployment\n- AWS (EC2, S3, Lambda basics), GCP (basic), Azure (intro)\n- Vercel (portfolio/frontend deployment)\n- Streamlit (ML app demos)\n- Infrastructure as Code: Terraform\n\nAutomation & AI Agents\n- n8n (workflow automation)\n- LangChain Agents + MCP integration\n- AutoGen, CrewAI (multi-agent frameworks)\n\nCollaboration & Project Management\n- Git, GitHub, GitHub Projects\n- Jira, Trello, Confluence\n- Postman (API testing), VS Code, PyCharm",
+    "tags": ["skills", "stack", "tools", "tech"]
+  },
+  "projects": [
+    {
+      "title": "AI-Powered Real-Time Trading & Analytics Platform (Moneyverse)",
+      "url": "https://github.com/zinalraval/Moneyverse_ai_app",
+      "content": "FastAPI + Streamlit real-time trading system with WebSocket-powered live market updates, interactive dashboard, and an in-app AI trading assistant chatbot. Integrates market/news APIs, PostgreSQL, and Docker. Tech: FastAPI, Streamlit, WebSockets, LLM Chatbot, PostgreSQL, Docker.",
+      "tags": ["trading", "streamlit", "fastapi", "websockets", "llm", "postgresql", "docker"]
+    },
+    {
+      "title": "AI Research & Decision System (AR-DMS)",
+      "url": "https://github.com/Zinalr44/AI-Research-DMS",
+      "content": "Full-stack AI assistant capable of parsing PDFs, web pages, and images using OCR, NLP, and semantic search. Supports RAG-based querying, summarization, and decision support. Tech: FastAPI, LangChain, Hugging Face, FAISS, PyMuPDF, Tesseract.",
+      "tags": ["rag", "ocr", "nlp", "semantic search", "fastapi", "faiss", "pymupdf", "tesseract", "langchain", "huggingface"]
+    },
+    {
+      "title": "Material Estimation from Architectural PDFs",
+      "url": "https://github.com/Zinalr44/AI-Powered-Material-Estimation-from-Architectural-PDFs",
+      "content": "Production-grade AI pipeline to analyze architectural blueprints and extract structured, room-wise material takeoff. Outputs CSV reports with counts and area-based estimations using LLM reasoning. Tech: Groq, LLaMA 3, PyMuPDF, pdfplumber, OCR.",
+      "tags": ["architecture", "ocr", "llm", "estimation", "groq", "llama-3", "pymupdf", "pdfplumber"]
+    },
+    {
+      "title": "HistoriAI – Multilingual Travel Assistant",
+      "url": "https://github.com/ShivenPatel19/HistoriAI---AI-Chatbot-Guide-for-India-s-Heritage",
+      "content": "Voice-interactive travel bot offering historical insights in English, Hindi, and Gujarati, powered by LLaMA 3 and LangGraph with a local RAG system and TTS output. Tech: LLaMA 3, LangGraph, ChromaDB, MMS, TTS.",
+      "tags": ["llama-3", "langgraph", "tts", "rag", "multilingual", "chroma", "mms"]
+    },
+    {
+      "title": "Automated LinkedIn Profile Scraper & Business Insights",
+      "url": "https://github.com/Zinalr44/Automated-LinkedIn-Profile-Scraper-Business-Insights",
+      "content": "Web scraping system that extracts professional data by filters and classifies businesses using AI. Includes scheduling, proxies, and JSON exports for large-scale insights. Tech: Selenium, SerpAPI, Python, JSON, Web Automation.",
+      "tags": ["selenium", "automation", "classification", "serpapi", "json"]
+    },
+    {
+      "title": "AI-Powered Text Rewriting System (GPT-4 + SBERT)",
+      "url": "https://github.com/Zinalr44/AI-Powered-Text-Rewriting-System-Using-GPT-4",
+      "content": "Advanced few-shot GPT-4-based rewriting tool with SBERT for style and meaning validation. Designed for tone-preserving rephrasing and prompt engineering. Tech: GPT-4 (OpenRouter), SentenceTransformers, Few-shot Learning, SBERT.",
+      "tags": ["gpt-4", "sbert", "nlp", "rewriting", "few-shot"]
+    },
+    {
+      "title": "Robotic Nurse (SSIP Funded – Ongoing)",
+      "content": "Smart nursing assistant robot for healthcare automation. Delivers medicine and monitors vitals using embedded electronics and BLE communication. Tech: Arduino, IR Sensors, BLE, Embedded C.",
+      "tags": ["robotics", "arduino", "ble", "healthcare", "embedded"],
+      "media": { "image": "WhatsApp Image 2025-04-10 at 14.59.37_ba8a2b79.jpg" }
+    },
+    {
+      "title": "Robotic Arm (SSIP Funded)",
+      "url": "https://github.com/Zinalr44/Robotic-Arm",
+      "content": "Programmable robotic arm designed for precision pick-and-place using Arduino and servo motors. Supports real-time control with industrial scenarios. Tech: Arduino, Servo Motors, Sensors, Embedded Programming.",
+      "tags": ["robotic-arm", "arduino", "servo", "embedded"],
+      "media": { "video": "Movie001.mp4", "poster": "20240104_120909.jpg" }
+    },
+    {
+      "title": "Python-Based Video Downloader API",
+      "url": "https://github.com/Zinalr44/Python-Based-Video-Downloader-API",
+      "content": "FastAPI wrapper around a video downloading tool that extracts videos by URL. Supports multi-resolution, concurrent downloads, and metadata handling. Tech: Python, FastAPI, yt-dlp, Pydantic.",
+      "tags": ["fastapi", "yt-dlp", "api", "pydantic"]
+    },
+    {
+      "title": "Real-time Face Swapping using Dlib & DeepFaceLive",
+      "url": "https://github.com/Zinalr44/Real-time-Face-Swapping-using-Dlib-DeepFaceLive",
+      "content": "Live face-swapping engine using facial landmarks, deep feature embeddings, and video stream alignment. Combines Dlib and DeepFaceLive for high-precision identity replacement. Tech: Dlib, OpenCV, DeepFaceLive, NumPy.",
+      "tags": ["dlib", "opencv", "deeplearning", "numpy"]
+    },
+    {
+      "title": "Food Classification & Calorie Estimation",
+      "url": "https://github.com/Zinalr44/Food-Classification-and-Calorie-Estimation-using-ResNet50",
+      "content": "ResNet50-based model that classifies food images and estimates calories to aid dietary monitoring. Tech: ResNet50, Keras, TensorFlow, ImageNet, NumPy.",
+      "tags": ["resnet50", "keras", "tensorflow", "imagenet", "numpy"]
+    },
+    {
+      "title": "Healthcare Billing Data Audit",
+      "url": "https://github.com/Zinalr44/Healthcare-Billing-Data-Analysis-and-Reporting",
+      "content": "Automated complex healthcare billing audits with anomaly detection, analytics, and report generation for optimization. Tech: Pandas, NumPy, Matplotlib, Regex, Python Automation.",
+      "tags": ["pandas", "numpy", "matplotlib", "automation", "regex", "python-automation"]
+    },
+    {
+      "title": "Cat vs Dog Image Classifier",
+      "url": "https://github.com/Zinalr44/Cat-and-Dog-Image-Classification-using-CNN",
+      "content": "CNN model to distinguish between cat and dog images with high accuracy, with focus on training, validation, and overfitting prevention. Tech: TensorFlow, Keras, CNN, Image Augmentation.",
+      "tags": ["cnn", "keras", "tensorflow", "augmentation"]
+    },
+    {
+      "title": "Movie Recommendation System",
+      "url": "https://github.com/Zinalr44/Movie-Recommendation-System-using-TF-IDF-and-SVD",
+      "content": "Hybrid recommendation engine combining TF-IDF and SVD-based collaborative filtering for personalized suggestions. Tech: Scikit-learn, Pandas, TF-IDF, SVD, Cosine Similarity.",
+      "tags": ["recsys", "svd", "tfidf", "sklearn", "cosine-similarity"]
+    },
+    {
+      "title": "Customer Segmentation Analysis",
+      "url": "https://github.com/Zinalr44/Customer-Segmentation-using-K-Means-Clustering",
+      "content": "Clustering to find high-value customer segments based on purchasing behavior, driving 15% growth via targeted marketing. Tech: K-Means, PCA, Seaborn, Scikit-learn, Python.",
+      "tags": ["k-means", "pca", "sklearn", "seaborn", "python"]
+    },
+    {
+      "title": "Spam Message Classification",
+      "url": "https://github.com/Zinalr44/Spam-Message-Classification",
+      "content": "NLP-based spam detection using TF-IDF feature extraction and classifiers, achieving high precision and recall. Tech: NLP, TF-IDF, Logistic Regression, Scikit-learn.",
+      "tags": ["nlp", "tfidf", "logistic-regression", "sklearn"]
+    }
+  ],
+  "contact": {
+    "email": "zinalraval4444@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/zinalraval/",
+    "github": "https://github.com/Zinalr44",
+    "kaggle": "https://www.kaggle.com/zinalraval",
+    "whatsapp": "https://wa.me/918488084444",
+    "upwork": "https://www.upwork.com/freelancers/~0150462ef1885ee898?mp_source=share",
+    "location": "Surat, Gujarat, India",
+    "maps": "https://www.google.com/maps?q=Surat,+Gujarat,+India"
+  },
+  "resume": {
+    "title": "Resume",
+    "file": "Zinal Raval.pdf",
+    "note": "Download the latest resume from the hero section or ask the bot for a link."
+  },
+  "experience": {
+    "title": "Experience",
+    "section": "#experience",
+    "content": "AI/ML Developer – Prodev Infotech (Jan 2025 – Present): builds and deploys real-time ML pipelines using FastAPI, Hugging Face, and custom LLM integrations. MooRopan INDIA PVT. LTD. (Oct 2022 – May 2023): developed content, managed campaigns, and analyzed metrics to grow brand presence.",
+    "tags": ["experience", "work", "fastapi", "llm", "huggingface"]
+  },
+  "certifications": {
+    "title": "Achievements",
+    "section": "#achievements",
+    "content": "Winner – Reckon 4.0 National Hackathon. SSIP India – Funding Recipient for Robotic Nurse and Robotic Arm. Regional Finalist – SSIP Hackathon 2022.",
+    "tags": ["achievements", "awards", "recognition", "ssip", "hackathon"]
+  },
+  "faq": [
+    {"q": "What do you do?", "a": "I build practical AI systems that understand, predict, and act — LLMs, NLP, computer vision, and robotics."},
+    {"q": "How to contact you?", "a": "Email me at zinalraval4444@gmail.com or use LinkedIn."},
+    {"q": "Do you have experience with RAG?", "a": "Yes, multiple RAG projects — AR-DMS and internal assistants using FAISS/Chroma and LangChain."},
+    {"q": "Where are you based?", "a": "Surat, Gujarat, India."},
+    {"q": "Where are you located?", "a": "Surat, Gujarat, India. Map: https://www.google.com/maps?q=Surat,+Gujarat,+India"},
+    {"q": "How can I download your resume?", "a": "Download the PDF: Zinal Raval.pdf"},
+    {"q": "What is your email?", "a": "zinalraval4444@gmail.com"},
+    {"q": "LinkedIn?", "a": "https://www.linkedin.com/in/zinalraval/"},
+    {"q": "GitHub?", "a": "https://github.com/Zinalr44"},
+    {"q": "Kaggle?", "a": "https://www.kaggle.com/zinalraval"},
+    {"q": "WhatsApp?", "a": "https://wa.me/918488084444"},
+    {"q": "Upwork?", "a": "https://www.upwork.com/freelancers/~0150462ef1885ee898?mp_source=share"}
+  ]
+}
