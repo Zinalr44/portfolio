@@ -362,7 +362,7 @@
     }
 
     if (kb.resume) {
-      const file = kb.resume.file || 'Zinal Raval.pdf';
+      const file = kb.resume.file || 'Zinal_Raval_Resume.pdf';
       const href = encodeURI(file);
       items.push({ type: 'resume', title: 'Resume', content: kb.resume.note || 'Download my resume.', href, tags: ['resume', 'cv', 'download'] });
     }

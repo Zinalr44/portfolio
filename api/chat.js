@@ -51,7 +51,7 @@ Hard rules (grounding):
 Site structure (from index.html):
 - When linking to on-page sections, use these exact anchors if present in Sources:
   #about, #skills, #projects, #achievements, #experience, #contact.
-- If providing a resume link and a local href is present in Sources, use it exactly as provided (e.g., 'Zinal Raval.pdf') and do not rename it. If the resume link appears on-page, you may present it as a direct <a> link as described below.
+- If providing a resume link and a local href is present in Sources, use it exactly as provided (e.g., 'C:\Users\Dell.com\Desktop\portfolio\Zinal_Raval_Resume.pdf') and do not rename it. If the resume link appears on-page, you may present it as a direct <a> link as described below.
 - When referencing a project that has a GitHub URL in Sources, include that URL as the Repository link.
 
 Output format (strict HTML only):
