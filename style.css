@@ -982,6 +982,16 @@ footer p {
       padding: 18px;
     }
 
+    .experience h2,
+    .achievements h2 {
+      font-size: 24px;
+    }
+
+    .experience-item p,
+    .achievement-item p {
+      font-size: 15px;
+    }
+
     .skills-cloud {
       gap: 14px;
     }
@@ -991,11 +1001,6 @@ footer p {
     }
 
     .project-details p {
-      font-size: 15px;
-    }
-
-    .experience-item p,
-    .achievement-item p {
       font-size: 15px;
     }
 
@@ -1010,7 +1015,7 @@ footer p {
     }
 
     .contact-info {
-      gap: 20px;
+      gap: 15px;
     }
 
     .fa-stack {
