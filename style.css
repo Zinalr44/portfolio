@@ -873,7 +873,12 @@ footer p {
       gap: 40px;
       padding: 80px 20px;
     }
-  
+
+    .hero .content {
+      text-align: center;
+      margin: 0 auto;
+    }
+
     .hero-image {
       max-width: 80%;
       margin: 0 auto;
