@@ -63,7 +63,7 @@ body {
     line-height: 1.6;
     transition: background-color 0.3s, color 0.3s;
     scroll-behavior: smooth;
-    padding: 0 10px;
+    padding: 0 0.625rem; /* 10px to rem */
 }
 /* Loader */
 .loader-container {
@@ -108,7 +108,7 @@ header {
 .hero::after { content: none; }
 
 header .logo {
-    font-size: 34px;
+    font-size: 2.125rem; /* 34px to rem */
     font-weight: bold;
     color: var(--button-background);
 }
@@ -128,14 +128,14 @@ h1, h2, h3 {
   
   p {
     color: var(--text-color);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
   }
 
 header nav ul li a {
     color: var(--text-color);
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1.0625rem; /* 17px to rem */
     transition: color 0.3s ease;
     position: relative;
 }
@@ -275,7 +275,7 @@ header nav ul li a:hover::after {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 14px;
+    font-size: 0.875rem; /* 14px to rem */
     z-index: 1;
     pointer-events: none;
     color: var(--text-color);
@@ -367,7 +367,7 @@ header nav ul li a:focus-visible {
 }
 
 .hero h1, .hero h2 {
-    font-size: 48px;
+    font-size: 3rem;
     margin: 0 0 20px;
 }
 
@@ -377,7 +377,7 @@ header nav ul li a:focus-visible {
 }
 
 .hero p {
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-bottom: 20px;
     color: var(--text-color);
     text-shadow: 0 1px 2px rgba(0,0,0,0.25);
@@ -385,11 +385,6 @@ header nav ul li a:focus-visible {
 
 .hero .highlight {
     color: var(--button-background);
-}
-
-.hero p {
-    font-size: 18px;
-    margin-bottom: 20px;
 }
 
 .hero .button {
@@ -592,7 +587,7 @@ header nav ul li a.active::after { width: 100%; }
 
 .project-item a:hover {
     color: var(--link-hover);  /* Soft purple accent for links */
-
+}
 /* Project Media Styles */
 .project-image {
     width: 100%;
@@ -1116,9 +1111,31 @@ footer p {
       font-size: 14px;
     }
 
+    .experience-list,
+    .achievement-list {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
     .experience-item,
     .achievement-item {
       padding: 14px;
+      width: 100%;
+      max-width: none;
+      box-sizing: border-box;
+      margin: 0 0 20px 0;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      overflow-x: hidden;
+    }
+
+    .experience-item p,
+    .achievement-item p {
+      word-wrap: break-word;
+      overflow-wrap: break-word;
     }
 
     .role,
@@ -1139,12 +1156,17 @@ footer p {
       font-size: 24px;
     }
 
-    .contact p {
-      font-size: 15px;
-      margin-bottom: 30px;
-    }
+  .contact p {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
 
-    .contact-info {
+  .experience,
+  .achievements {
+    overflow-x: hidden;
+  }
+
+  .contact-info {
       gap: 15px;
       overflow-x: auto;
       flex-wrap: nowrap;
