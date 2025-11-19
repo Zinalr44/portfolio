@@ -604,6 +604,38 @@ header nav ul li a.active::after { width: 100%; }
     color: var(--link-hover);  /* Soft purple accent for links */
 }
 
+/* Project Media Styles */
+.project-image {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-video {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-video:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
 /* Projects CTA */
 .projects-cta { text-align: center; margin: 18px 0 0; color: var(--text-color); }
 .projects-cta a { color: var(--button-background); text-decoration: underline; }
