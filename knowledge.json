@@ -128,8 +128,8 @@
   "experience": {
     "title": "Experience",
     "section": "#experience",
-    "content": "AI/ML Developer – Prodev Infotech (Jan 2025 – Present): builds and deploys real-time ML pipelines using FastAPI, Hugging Face, and custom LLM integrations. MooRopan INDIA PVT. LTD. (Oct 2022 – May 2023): developed content, managed campaigns, and analyzed metrics to grow brand presence.",
-    "tags": ["experience", "work", "fastapi", "llm", "huggingface"]
+    "content": "AI Developer – Upwork (Jun 2025 – Present): Freelance AI Developer specializing in production-ready AI systems. I help businesses turn ideas into scalable solutions by building AI-powered backend infrastructures, integrating Large Language Models, and developing automations that reduce manual work and scale operations. AI/ML Developer – Prodev Infotech (Jan 2025 – Nov 2025): Building and deploying real-time ML pipelines using FastAPI, Hugging Face, and custom LLM integrations. MooRopan INDIA PVT. LTD. (Oct 2022 - May 2023): As a core member, developed engaging content, managed campaigns, and analyzed metrics to enhance brand presence and customer engagement on social media.",
+    "tags": ["experience", "work", "fastapi", "llm", "huggingface", "upwork", "freelance", "prodev"]
   },
   "certifications": {
     "title": "Achievements",
