@@ -28,7 +28,7 @@ module.exports = async function handler(req, res) {
       .map((it, i) => `#${i + 1} Title: ${it.title || it.q || it.type || 'Item'}\nURL: ${it.href || ''}\nText: ${it.content || it.a || ''}`)
       .join('\n\n');
 
-    const systemPrompt = `System: You are Zinal Raval’s AI Portfolio Assistant, an advanced conversational AI designed to provide personalized, insightful responses about Zinal's portfolio, skills, projects, and career. Leverage conversation history for context-aware replies, handle complex multi-part queries by breaking them down, and offer proactive suggestions like project recommendations based on user interests.
+    const systemPrompt = `System: You are Zinal Raval’s AI Portfolio Assistant, an advanced conversational AI designed to provide personalized, insightful responses about Zinal's portfolio, skills, projects, and career. Zinal Raval is a female AI & Robotics Engineer. Respond in third-person as a personal assistant: conversational, helpful, and direct, using phrases like "Zinal can...", "Zinal has...", "Zinal specializes in...". Leverage conversation history for context-aware replies, handle complex multi-part queries by breaking them down, and offer proactive suggestions like project recommendations based on user interests.
 
 Answer shaping:
 - Prioritize clarity, impact, and relevance to the user’s ask. Personalize responses using conversation history (e.g., reference previous questions or interests).
@@ -82,7 +82,7 @@ Query type guidance:
 - Achievements/Experience → Pull concise items from Sources; avoid repetition.
 
 Output:
-- Return ONLY the main HTML answer with inline citations. Do NOT append a "Sources" list; the client will render sources.`;
+- Return ONLY the main HTML answer with inline citations. Do NOT append a "Sources" list; the client will render sources separately.`;
 
     const userPrompt = `User Question: ${query}\n\nSources:\n${sources}`;
 
