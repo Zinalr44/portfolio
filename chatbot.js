@@ -1236,8 +1236,9 @@
       return;
     }
 
+    // Check browser support
     if (!('webkitSpeechRecognition' in window) && !('SpeechRecognition' in window)) {
-      showVoiceFeedback('Voice recognition not supported in this browser. Try Chrome or Edge.', 'error');
+      showVoiceFeedback('Voice recognition not supported in this browser. Try Chrome, Edge, or Safari.', 'error');
       return;
     }
 
@@ -1247,100 +1248,142 @@
       return;
     }
 
-    const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
-    recognition.lang = 'en-US';
-    recognition.interimResults = true; // Show interim results
-    recognition.maxAlternatives = 5;   // Get more alternatives for better accuracy
-    recognition.continuous = true;     // Enable continuous listening
+    // Check if microphone permission is already granted
+    if (navigator.permissions && navigator.permissions.query) {
+      navigator.permissions.query({ name: 'microphone' }).then(result => {
+        if (result.state === 'denied') {
+          showVoiceFeedback('Microphone permission denied. Please enable it in browser settings.', 'error');
+          return;
+        }
+        initializeRecognition();
+      }).catch(() => {
+        // Fallback: try to initialize anyway
+        initializeRecognition();
+      });
+    } else {
+      initializeRecognition();
+    }
 
-    // Store recognition in state so we can stop it later
-    state.recognition = recognition;
-    state.listening = true;
+    function initializeRecognition() {
+      const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
 
-    recognition.onstart = () => {
-      showVoiceFeedback('Listening... Speak now', 'listening');
-      els.voiceBtn.classList.add('listening');
-      els.voiceBtn.setAttribute('aria-label', 'Stop listening');
-      els.voiceBtn.title = 'Click to stop listening';
-      document.body.classList.add('voice-active');
-    };
+      // Configure recognition settings
+      recognition.lang = 'en-US';
+      recognition.interimResults = true;
+      recognition.maxAlternatives = 1;
+      recognition.continuous = false; // Changed to false for better control
 
-    recognition.onresult = (event) => {
-      // Get the most confident result
-      const result = event.results[event.resultIndex];
-      const transcript = result[0].transcript.trim();
-      
-      // Update input field with interim results
-      if (result.isFinal) {
-        // If this is a final result, add a space for the next utterance
-        els.input.value = transcript + ' ';
-        // Auto-submit if there's enough content and a short pause
-        if (transcript.length > 3 && !result[0].confidence || result[0].confidence > 0.7) {
+      // Store recognition in state
+      state.recognition = recognition;
+      state.listening = true;
+
+      recognition.onstart = () => {
+        showVoiceFeedback('Listening... Speak now', 'listening');
+        els.voiceBtn.classList.add('listening');
+        els.voiceBtn.setAttribute('aria-label', 'Stop listening');
+        els.voiceBtn.title = 'Click to stop listening';
+        document.body.classList.add('voice-active');
+      };
+
+      recognition.onresult = (event) => {
+        let finalTranscript = '';
+        let interimTranscript = '';
+
+        // Process all results
+        for (let i = event.resultIndex; i < event.results.length; i++) {
+          const result = event.results[i];
+          const transcript = result[0].transcript;
+
+          if (result.isFinal) {
+            finalTranscript += transcript;
+          } else {
+            interimTranscript += transcript;
+          }
+        }
+
+        // Update input field
+        if (finalTranscript) {
+          els.input.value = finalTranscript.trim();
+          autoResizeTextarea();
+
+          // Auto-submit after a short delay
           setTimeout(() => {
-            if (els.input.value.trim()) {
+            if (els.input.value.trim() && state.listening) {
               addMessage(`Voice input: "${escapeHTML(els.input.value.trim())}"`, 'user');
               els.form.requestSubmit();
               els.input.value = '';
               autoResizeTextarea();
+              stopVoiceRecognition();
             }
-          }, 500);
+          }, 1000);
+        } else if (interimTranscript) {
+          els.input.value = interimTranscript;
+          autoResizeTextarea();
         }
-      } else {
-        // Show interim results
-        els.input.value = transcript;
-      }
-      autoResizeTextarea();
-    };
+      };
 
-    recognition.onerror = (event) => {
-      console.error('Voice recognition error:', event.error, event.message || '');
-      let errorMsg = 'Voice recognition failed. ';
-      switch (event.error) {
-        case 'not-allowed':
-        case 'permission-denied':
-          errorMsg = 'Microphone access denied. Please allow microphone permissions in your browser settings.';
-          break;
-        case 'service-not-allowed':
-          errorMsg = 'Speech recognition service blocked. Please enable it in your browser settings.';
-          break;
-        case 'no-speech':
-          // Don't show error for no-speech, just stop listening
-          stopVoiceRecognition();
-          return;
-        case 'audio-capture':
-          errorMsg = 'Microphone not found or not working. Please check your microphone.';
-          break;
-        case 'network':
-          errorMsg = 'Network error. Please check your internet connection.';
-          break;
-        case 'language-not-supported':
-          errorMsg = 'Language not supported. Try a different language.';
-          break;
-        default:
-          errorMsg = 'Error with voice recognition. Please try again.';
-      }
-      showVoiceFeedback(errorMsg, 'error');
-      stopVoiceRecognition();
-    };
+      recognition.onerror = (event) => {
+        console.error('Voice recognition error:', event.error, event.message || '');
+        let errorMsg = 'Voice recognition failed. ';
 
-    recognition.onend = () => {
-      if (state.listening) {
-        // If we're still supposed to be listening, restart recognition
-        try {
-          recognition.start();
-        } catch (e) {
-          console.error('Failed to restart recognition:', e);
+        switch (event.error) {
+          case 'not-allowed':
+          case 'permission-denied':
+            errorMsg = 'Microphone access denied. Please allow microphone permissions and try again.';
+            break;
+          case 'service-not-allowed':
+            errorMsg = 'Speech recognition service blocked. Please enable it in browser settings.';
+            break;
+          case 'no-speech':
+            errorMsg = 'No speech detected. Please try speaking louder or closer to the microphone.';
+            break;
+          case 'audio-capture':
+            errorMsg = 'Microphone not found or not working. Please check your microphone connection.';
+            break;
+          case 'network':
+            errorMsg = 'Network error. Please check your internet connection.';
+            break;
+          case 'language-not-supported':
+            errorMsg = 'Language not supported. Try a different language setting.';
+            break;
+          case 'aborted':
+            // User cancelled, don't show error
+            stopVoiceRecognition();
+            return;
+          default:
+            errorMsg = 'Voice recognition error. Please try again.';
+        }
+
+        showVoiceFeedback(errorMsg, 'error');
+        stopVoiceRecognition();
+      };
+
+      recognition.onend = () => {
+        // Only restart if we're still supposed to be listening and no final result was processed
+        if (state.listening && !els.input.value.trim()) {
+          // Small delay before restarting to prevent rapid restarts
+          setTimeout(() => {
+            if (state.listening) {
+              try {
+                recognition.start();
+              } catch (e) {
+                console.error('Failed to restart recognition:', e);
+                stopVoiceRecognition();
+              }
+            }
+          }, 100);
+        } else {
           stopVoiceRecognition();
         }
-      }
-    };
+      };
 
-    try {
-      recognition.start();
-    } catch (e) {
-      console.error('Failed to start recognition:', e);
-      showVoiceFeedback('Failed to start voice recognition. Please try again.', 'error');
-      stopVoiceRecognition();
+      try {
+        recognition.start();
+      } catch (e) {
+        console.error('Failed to start recognition:', e);
+        showVoiceFeedback('Failed to start voice recognition. Please try again.', 'error');
+        stopVoiceRecognition();
+      }
     }
   }
 
