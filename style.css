@@ -531,27 +531,19 @@ header nav ul li a.active::after { width: 100%; }
 }
 
 .project-item {
-    background: var(--project-background);
-    border: 1px solid rgba(255,255,255,0.06);
-    border-radius: 14px;
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
-    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    background-color: var(--project-background);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: relative;
 }
 
-.project-item:hover,
-.project-item:focus-within {
-    transform: translateY(-4px);
-    /* base elevation + subtle purple glow */
-    box-shadow:
-      0 10px 22px rgba(0,0,0,0.22),
-      0 0 0 2px rgba(153,102,255,0.18),
-      0 12px 28px rgba(153,102,255,0.18);
-    border-color: rgba(153,102,255,0.25);
+.project-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(106, 76, 156, 0.3); /* Soft purple glow on hover */
 }
 
 .project-details {
@@ -596,13 +588,10 @@ header nav ul li a.active::after { width: 100%; }
 .project-item a {
     text-decoration: none;
     color: inherit;  /* Inherits text color */
-    display: block;
-    height: 100%;
 }
 
 .project-item a:hover {
     color: var(--link-hover);  /* Soft purple accent for links */
-}
 
 /* Project Media Styles */
 .project-image {
